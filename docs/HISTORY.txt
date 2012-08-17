@@ -1,0 +1,21 @@
+Changelog
+=========
+
+3.0dev (unreleased)
+-------------------
+
+- A refactored version
+
+2.0 (unreleased)
+----------------
+
+- 01/2009 - 08/2012
+  A more complex vim configuration
+  splitted on various .vim files
+  and including few plugins.
+
+1.0 (unreleased)
+----------------
+
+- Previous of 01/2009
+  Just a .vimrc
