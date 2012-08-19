@@ -11,11 +11,13 @@ done
 echo "# Installing dd-vim in $HOME directory"
 mkdir -p $DDPATH
 cp -vi vimrc $DDPATH
+cp -vi gvimrc $DDPATH
 cp -vi *.vim $DDPATH
 cp -vi version.txt $DDPATH
 
 ln -vs $DDPATH $HOME/.vim
 ln -vs $DDPATH/vimrc $HOME/.vimrc
+ln -vs $DDPATH/gvimrc $HOME/.gvimrc
 
 echo "# Installing Vundle"
 git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
