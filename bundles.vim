@@ -15,14 +15,9 @@
 
 " Bundles {
 
-    " My Bundles here:
+    " General
     "
-    " Repos on Github
-    " ...
-    " Vim-scripts repos
-    " ...
-    " Non Github repos
-    " ...
+    Bundle 'scrooloose/nerdtree'
 
     filetype plugin indent on     " Required by Vundle
     "

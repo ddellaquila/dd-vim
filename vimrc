@@ -119,6 +119,9 @@
     " Load Bundles
     source $DDPATH/bundles.vim
 
+    " Plugins Settings
+    source $DDPATH/plugins.vim
+
 " }
 
 " End of vimrc
