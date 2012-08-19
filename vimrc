@@ -18,6 +18,9 @@
     " We use Vim settings
     set nocompatible        " Must be the first line
 
+    " Set DD Vim Configuration path
+    let $DDPATH=$HOME."/.dd-vim"
+
     " Background
     "set background=light
     set background=dark
@@ -29,6 +32,19 @@
     " Set some search options
     "set incsearch
     set noignorecase
+
+    " Setup Bundle Support {
+
+        filetype off            " Required by Vundle
+
+        " The next two lines ensure that the ~/.vim/bundle/ system works
+        set rtp+=~/.vim/bundle/vundle/
+        call vundle#rc()
+
+        " Let Vundle manage Vundle, this is required by Vundle
+        Bundle 'gmarik/vundle'
+
+    " }
 
 " }
 
@@ -84,6 +100,7 @@
 " }
 
 " GVim GUI {
+
     " Set useful settings for GVim in case .gvimrc is missing
     if has('gui_running')
 
@@ -94,6 +111,14 @@
         set mouse=a
 
     endif
+
+" }
+
+" External Configurations {
+
+    " Load Bundles
+    source $DDPATH/bundles.vim
+
 " }
 
 " End of vimrc
