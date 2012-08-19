@@ -16,8 +16,10 @@
 " Bundles {
 
     " General
-    "
     Bundle 'scrooloose/nerdtree'
+
+    " GPG Encryption
+    Bundle 'jamessan/vim-gnupg'
 
     filetype plugin indent on     " Required by Vundle
     "
