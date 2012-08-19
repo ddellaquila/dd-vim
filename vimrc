@@ -122,6 +122,9 @@
     " Plugins Settings
     source $DDPATH/plugins.vim
 
+    " Key Mappings
+    source $DDPATH/mappings.vim
+
 " }
 
 " End of vimrc
