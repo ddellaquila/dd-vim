@@ -21,10 +21,6 @@
     " Set DD Vim Configuration path
     let $DDPATH=$HOME."/.dd-vim"
 
-    " Color Scheme and Background
-    colorscheme spiderwebdark
-    set background=dark
-
     " Disable backup
     set nobackup
     set nowritebackup
@@ -90,6 +86,12 @@
 " }
 
 " Vim UI {
+
+    " Color Scheme and Background
+    colorscheme spiderwebdark
+    set background=dark
+    "colorscheme spiderweblight
+    "set background=light
 
     " Statusline
     set laststatus=2
