@@ -21,8 +21,8 @@
     " Set DD Vim Configuration path
     let $DDPATH=$HOME."/.dd-vim"
 
-    " Background
-    "set background=light
+    " Color Scheme and Background
+    colorscheme spiderwebdark
     set background=dark
 
     " Disable backup
@@ -31,7 +31,10 @@
 
     " Set some search options
     "set incsearch
-    set noignorecase
+    set ignorecase
+    set hlsearch
+    " remap space to clear highlight
+    nmap <SPACE> <SPACE>:noh<CR>
 
     " Setup Bundle Support {
 
@@ -93,8 +96,7 @@
     " Set visual bell
     set vb
 
-    " Enable mouse in a terminal
-    "set mouse=a
+    " Disable mouse in a terminal
     set mouse=
 
 " }
@@ -104,7 +106,8 @@
     " Set useful settings for GVim in case .gvimrc is missing
     if has('gui_running')
 
-        " Background
+        " Color Scheme and Background
+        colorscheme spiderweblight
         set background=light
 
         " Enable mouse in a windows

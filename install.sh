@@ -13,6 +13,7 @@ mkdir -p $DDPATH
 cp -vi vimrc $DDPATH
 cp -vi gvimrc $DDPATH
 cp -vi *.vim $DDPATH
+cp -avi colors $DDPATH
 cp -vi version.txt $DDPATH
 
 ln -vs $DDPATH $HOME/.vim
