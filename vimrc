@@ -133,6 +133,9 @@
     " Key Mappings
     source $DDPATH/mappings.vim
 
+    " Abbreviations
+    source $DDPATH/abbreviations.vim
+
 " }
 
 " End of vimrc
