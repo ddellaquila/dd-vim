@@ -1,5 +1,5 @@
 "##############################################################"
-" vim: set foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set foldmarker={,} foldlevel=0 foldmethod=marker :
 "
 " DD Vim Configuration
 "

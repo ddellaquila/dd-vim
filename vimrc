@@ -1,5 +1,5 @@
 "##############################################################"
-" vim: set foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set foldmarker={,} foldlevel=0 foldmethod=marker :
 "
 " DD Vim Configuration
 "
@@ -35,6 +35,11 @@
     set hlsearch
     " remap space to clear highlight
     nmap <SPACE> <SPACE>:noh<CR>
+
+    " Spell Checking
+    set nospell
+    set spelllang=en,es,it
+    set spellsuggest=5
 
     " Setup Bundle Support {
 
