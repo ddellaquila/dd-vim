@@ -25,4 +25,4 @@
 
 " }
 
-" End of bundles.vim
+" End of plugins.vim

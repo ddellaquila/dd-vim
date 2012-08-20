@@ -53,4 +53,4 @@ amenu <silent> T&abs.&Previous :tabprevious<cr>
 amenu <silent> T&abs.Ne&xt :tabnext<cr>
 amenu <silent> T&abs.&Delete :confirm tabclose<cr>
 
-" End of ~/.gvimrc
+" End of gvimrc

@@ -62,4 +62,3 @@
 " }
 
 " End of mappings.vim
-
