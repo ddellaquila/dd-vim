@@ -3,9 +3,7 @@
 "
 " DD Vim Configuration
 "
-" Danilo Dellaquila
-" K-Gigas Computers S.L.
-" Ver. 3.0, Mon, 20 Aug 2012 17:45:25 +0200
+" Danilo Dellaquila - K-Gigas Computers S.L.
 "
 " This is the personal Vim configuration of Danilo Dellaquila.
 "
