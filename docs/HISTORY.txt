@@ -1,10 +1,20 @@
 Changelog
 =========
 
-3.0dev (unreleased)
--------------------
+3.0 (2012-09-07)
+----------------
 
-- A refactored version
+- New refactored vimrc and gvimrc
+- Add docs
+- Add install.sh script
+- Add Vundle to manage Vim plugins
+- Add NERDTree plugin
+- Add vim-gnupg plugin
+- Add key mappings
+- Add colors, fix mouse and search options
+- Add spell checking settings
+- Add abbreviations
+- Add file types and customizations
 
 2.0 (unreleased)
 ----------------
