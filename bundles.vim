@@ -19,6 +19,9 @@
     " GPG Encryption
     Bundle 'jamessan/vim-gnupg'
 
+    " HTML Editing
+    Bundle 'gregsexton/MatchTag'
+
     filetype plugin indent on     " Required by Vundle
     "
     " Brief help
