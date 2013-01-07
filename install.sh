@@ -25,3 +25,7 @@ git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 echo "# Installing Vim plugins using Vundle"
 vim +BundleInstall! +BundleClean +qall
+
+echo "# Installing Vim plugins customizations"
+echo "# - MatchTag custom filetypes"
+cp -vi bundle/MatchTag/ftplugin/* $DDPATH/bundle/MatchTag/ftplugin/
