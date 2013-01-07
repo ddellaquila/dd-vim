@@ -22,6 +22,9 @@
     " HTML Editing
     Bundle 'gregsexton/MatchTag'
 
+    " Add your bundles here
+    "
+
     filetype plugin indent on     " Required by Vundle
     "
     " Brief help
