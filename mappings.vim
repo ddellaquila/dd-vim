@@ -48,7 +48,7 @@
     map <Leader>M :set mouse=<CR>
 
     " Insert the current date
-    map <Leader>d :read !date --rfc-3339=date<CR>kJ$
+    map <Leader>d mk:read !date --rfc-3339=date<CR>D`kP<DOWN>dd:delmarks k<CR>
     map <Leader>D :read !date -R<CR>kJ
 
     " Add a reStructuredText link
