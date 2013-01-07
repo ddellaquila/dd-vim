@@ -1,8 +1,17 @@
 Changelog
 =========
 
-3.1dev (unreleased)
--------------------
+3.1 (2013-01-07)
+----------------
+
+- Improve documentation
+- Fix inserting current date key mapping
+- Update copyright abbreviation
+- Change install.sh to copy existing NERDTree Bookmarks
+- Change for installing Vim plugins customizations
+- Add MatchTag feature for .pt files
+- Set tabstop for html, xhtml and xml files
+- Add MatchTag plugin
 
 3.0 (2012-09-07)
 ----------------
