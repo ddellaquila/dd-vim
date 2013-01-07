@@ -23,7 +23,7 @@
     " }
 
     " Generic text {
-        iabbrev CP Copyright 2012, Danilo Dellaquila, K-Gigas Computers
+        iabbrev CP Copyright 2013, Danilo Dellaquila, K-Gigas Computers
     " }
 
 " }
