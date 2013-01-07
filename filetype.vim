@@ -22,3 +22,6 @@ augroup filetypedetect
   au! BufRead,BufNewFile *.md       setfiletype markdown
 augroup END
 
+autocmd FileType html  set tabstop=2|set shiftwidth=2
+autocmd FileType xhtml set tabstop=2|set shiftwidth=2
+autocmd FileType xml   set tabstop=2|set shiftwidth=2
