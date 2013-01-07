@@ -29,3 +29,7 @@ vim +BundleInstall! +BundleClean +qall
 echo "# Installing Vim plugins customizations"
 echo "# - MatchTag custom filetypes"
 cp -vi bundle/MatchTag/ftplugin/* $DDPATH/bundle/MatchTag/ftplugin/
+echo "# - Copy existing NERDTree Bookmarks"
+if [ -f $DDPATH.$today/.NERDTreeBookmarks ]; then
+    cp -vi $DDPATH.$today/.NERDTreeBookmarks $DDPATH
+fi
