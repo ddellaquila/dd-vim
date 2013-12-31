@@ -48,14 +48,18 @@
     map <Leader>M :set mouse=<CR>
 
     " Insert the current date
-    map <Leader>d mk:read !date --rfc-3339=date<CR>D`kP<DOWN>dd:delmarks k<CR>
+    map <Leader>d :read !date --rfc-3339=date<CR>kJ$
     map <Leader>D :read !date -R<CR>kJ
 
     " Add a reStructuredText link
-    map <Leader>l o`LinkText`_<CR>.. _`LinkText`: link<ESC>k2b
+    map <Leader>l o``_<CR>.. _``: link<ESC>k2b
 
     " Insert Python Debugger
-    map <Leader>p oimport pdb; pdb.set_trace()
+    map <Leader>p Oimport pdb; pdb.set_trace()
+
+    """ Reformat text
+    map <Leader>f gq}
+    map <Leader>F gqG
 
 " }
 
