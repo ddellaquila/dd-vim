@@ -23,5 +23,10 @@
     autocmd InsertLeave * match ExtraWhitespace /\s\+$/
     autocmd BufWinLeave * call clearmatches()
 
+    augroup HiglightTODO
+    autocmd!
+    autocmd BufWinEnter,WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO\|FIXME', -1)
+    augroup END
+
 " }
 
