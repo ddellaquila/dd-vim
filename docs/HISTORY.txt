@@ -1,6 +1,14 @@
 Changelog
 =========
 
+3.2 (2013-12-31)
+----------------
+
+- Set Color Scheme to default
+- Add highlighting of TODO and FIXME keywords
+- Add Reformat Text map and fix some others maps
+- Add syntax highlighting for MoinMoin wiki text
+
 3.1 (2013-01-07)
 ----------------
 
