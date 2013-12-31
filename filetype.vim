@@ -20,6 +20,7 @@ augroup filetypedetect
   au! BufRead,BufNewFile *.rst      setfiletype rst
   au! BufRead,BufNewFile *.txt      setfiletype rst
   au! BufRead,BufNewFile *.md       setfiletype markdown
+  au! BufRead,BufNewFile *.wiki     setfiletype moin
 augroup END
 
 autocmd FileType html  set tabstop=2|set shiftwidth=2

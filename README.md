@@ -96,6 +96,12 @@ on a tag. It works in much the same way as the MatchParen plugin.
 
 **Repository:** [https://github.com/gregsexton/MatchTag](https://github.com/gregsexton/MatchTag)
 
+### moin.vim
+
+This provides syntax highlighting for MoinMoin wiki text.
+
+**Repository:** [http://www.vim.org/scripts/script.php?script_id=1459](http://www.vim.org/scripts/script.php?script_id=1459)
+
 ### Adding New Plugins
 
 To add a new Vim plugin, you need to edit the `bundles.vim` file, just

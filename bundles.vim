@@ -22,6 +22,9 @@
     " HTML Editing
     Bundle 'gregsexton/MatchTag'
 
+    " MoinMoin Wiki Syntax
+    Bundle 'moin.vim'
+
     " Add your bundles here
     "
 
