@@ -13,6 +13,7 @@
 
 " Background
 set background=light
+"set background=dark
 
 " Enable mouse in a windows
 set mouse=a

@@ -86,10 +86,9 @@
 " Vim UI {
 
     " Color Scheme and Background
-    colorscheme spiderwebdark
-    set background=dark
-    "colorscheme spiderweblight
     "set background=light
+    set background=dark
+    colorscheme default
 
     " Statusline
     set laststatus=2
@@ -112,8 +111,9 @@
     if has('gui_running')
 
         " Color Scheme and Background
-        colorscheme spiderweblight
+        "set background=dark
         set background=light
+        colorscheme default
 
         " Enable mouse in a windows
         set mouse=a

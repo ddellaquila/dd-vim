@@ -50,9 +50,18 @@ separated vim files for specific needs.
 Colors
 ------
 
+Color scheme is set to default with light background for GVim GUI, while
+for terminals the background is set to dark.
+
+If your terminal has a light background, use the following command to
+get a better color map for syntax highlighting:
+
+    :set background=light
+
 I was never happy with Vim colors, and probably I'll never be, so
-few years ago I wrote a couple of colorscheme files, for a dark and
-light background, you can find them inside the directory `colors`.
+few years ago I wrote a couple of colorscheme files, one for a light and
+another one for a dark background, you can find them inside the
+directory `colors`.
 
 Plugins
 -------
