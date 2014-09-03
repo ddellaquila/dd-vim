@@ -7,7 +7,7 @@ Managing Vim plugins has been always difficult, all files are
 stored into common directories, which means that updating or
 disabling plugins can be a real mess, so I decided to rewrite
 my Vim configuration from scratch and make use of
-[Vundle](https://github.com/gmarik/vundle), a plugin management
+[Vundle](https://github.com/gmarik/Vundle.vim), a plugin management
 system that make a well organized Vim directory. Also Vundle
 ensures that the latest versions of your plugins are installed
 and makes it easy to keep them up to date.
@@ -18,6 +18,7 @@ so many settings that it's quite impossible that `dd-vim` or any other
 a good starting point to make your own Vim configuration, so fork me
 on GitHub and send me your pull requests, if they fit my needs as well
 I'll be happy to merge them.
+
 
 Features
 --------
@@ -40,12 +41,12 @@ in case `.gvimrc` is not used or is missing.
 Inside the "External Configuration" section, there are calls to
 separated vim files for specific needs.
 
-* `bundles.vim`, load Vim plugins
-* `plugins.vim`, specific settings for Vim plugins
+* `plugins.vim`, load Vim plugins using Vundle
 * `mappings.vim`, define key mappings
-* `filetype.vim`, settings for specific file types
+* `filetypes.vim`, settings for specific file types
 * `abbreviations.vim`, define abbreviations
 * `custom.vim`, define custom settings
+
 
 Colors
 ------
@@ -62,6 +63,7 @@ I was never happy with Vim colors, and probably I'll never be, so
 few years ago I wrote a couple of colorscheme files, one for a light and
 another one for a dark background, you can find them inside the
 directory `colors`.
+
 
 Plugins
 -------
@@ -111,42 +113,73 @@ This provides syntax highlighting for MoinMoin wiki text.
 
 **Repository:** [http://www.vim.org/scripts/script.php?script_id=1459](http://www.vim.org/scripts/script.php?script_id=1459)
 
-### Adding New Plugins
+### wikipedia.vim
 
-To add a new Vim plugin, you need to edit the `bundles.vim` file, just
-add a line with a `Bundle` command like this:
+This provides syntax highlighting for MediaWiki articles.
+
+**Repository:** [http://www.vim.org/scripts/script.php?script_id=1787](http://www.vim.org/scripts/script.php?script_id=1787)
+
+### SnipMate
+
+SnipMate provides support for textual snippets, similar to TextMate.
+A snippet is a piece of often-typed text that you can insert into your document using a
+trigger word followed by a <tab>.
+
+**Repository:** [https://github.com/garbas/vim-snipmate](https://github.com/garbas/vim-snipmatehttp://address)
+
+### vim-snippets
+
+This plugin contains snippets files for various programming languages,
+including Python, Perl, PHP, Javascript, HTML, Markdown, and several
+others
+
+**Repository:** [https://github.com/honza/vim-snippets](https://github.com/honza/vim-snippets)
+
+
+Adding New Plugins
+------------------
+
+To add a new Vim plugin, you need to edit the `plugins.vim` file, just
+add a line with a `Plugin` command like this:
 
     " 'git_repo_uri' should be a valid uri to git repository
-    Bundle 'git_repo_uri'
+    Plugin 'git_repo_uri'
 
 or
 
     " 'script-name' should be an official vim-scripts name
-    Bundle 'script_name'
+    Plugin 'script_name'
 
-Vundle loves Github, so you can use a short uri like this:
-
-    Bundle 'tpope/vim-fugitive'
-
-which equals the full uri:
-
-    Bundle 'http://github.com/tpope/vim-fugitive.git'
-
-Here some examples taken from [Vundle](https://github.com/gmarik/vundle)
+Here some examples taken from [Vundle](https://github.com/gmarik/Vundle.vim)
 documentation.
 
-    " For repositories on GitHub
-    Bundle 'tpope/vim-fugitive'
-    Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+    " The following are examples of different formats supported.
     "
-    " For official vim-scripts repositories
-    Bundle 'L9'
-    Bundle 'FuzzyFinder'
+    " plugin on GitHub repo
+    Plugin 'tpope/vim-fugitive'
     "
-    " For non GitHub repositories
-    Bundle 'git://git.wincent.com/command-t.git'
+    " plugin from http://vim-scripts.org/vim/scripts.html
+    Plugin 'L9'
+    "
+    " Git plugin not hosted on GitHub
+    Plugin 'git://git.wincent.com/command-t.git'
+    "
+    " git repos on your local machine (i.e. when working on your own plugin)
+    Plugin 'file:///home/gmarik/path/to/plugin'
+    "
+    " The sparkup vim script is in a subdirectory of this repo called vim.
+    " Pass the path to set the runtimepath properly.
+    Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+    "
+    " Avoid a name conflict with L9
+    Plugin 'user/L9', {'name': 'newL9'}
 
-*NOTE: Vundle defaults to http:// protocol for the short URIs*
+## Install Plugins
+
+   Launch `vim` and run `:PluginInstall`
+
+   To install from command line: `vim +PluginInstall +qall`
+
 
 Installation
 ------------
@@ -155,6 +188,7 @@ Enter `dd-vim` directory and execute `install.sh` script:
 
     $ cd dd-vim
     $ ./install.sh
+
 
 Credits
 -------
@@ -165,4 +199,3 @@ Credits
   colorscheme by Caciano Machado
 * `spiderweblight.vim` is based on [`silent.vim`](http://www.vim.org/scripts/script.php?script_id=2266)
   colorscheme by Pascal Vasilii
-
