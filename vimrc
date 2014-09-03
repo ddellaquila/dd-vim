@@ -35,16 +35,15 @@
     set spelllang=en,es,it
     set spellsuggest=5
 
-    " Setup Bundle Support {
+    " Setup Vundle Support {
 
         filetype off            " Required by Vundle
+        "  set the runtime path to include Vundle and initialize
+        set rtp+=$DDPATH/bundle/Vundle.vim
+            call vundle#begin()
 
-        " The next two lines ensure that the ~/.vim/bundle/ system works
-        set rtp+=~/.vim/bundle/vundle/
-        call vundle#rc()
-
-        " Let Vundle manage Vundle, this is required by Vundle
-        Bundle 'gmarik/vundle'
+        " Let Vundle manage Vundle, this is required
+        Plugin 'gmarik/Vundle.vim'
 
     " }
 
@@ -125,11 +124,20 @@
 
 " External Configurations {
 
-    " Load Bundles
-    source $DDPATH/bundles.vim
-
-    " Plugins Settings
+    " Load Plugins
     source $DDPATH/plugins.vim
+    "
+    " All of your Plugins must be added before the following line
+    call vundle#end()            " required
+    filetype plugin indent on    " required
+    "
+    " Brief help
+    " :PluginList       - lists configured plugins
+    " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+    " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+    " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+    "
+    " see :h vundle for more details or wiki for FAQ
 
     " Key Mappings
     source $DDPATH/mappings.vim

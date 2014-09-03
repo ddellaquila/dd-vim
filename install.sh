@@ -4,7 +4,7 @@ DDPATH="$HOME/.dd-vim"
 
 echo "# Backing up current vim config"
 today=`date +%Y%m%d`
-for file in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc $DDPATH; do
+for file in $DDPATH $HOME/.vim $HOME/.vimrc $HOME/.gvimrc ; do
     [ -e $file ] && mv -v $file $file.$today
 done
 
@@ -21,15 +21,11 @@ ln -vs $DDPATH/vimrc $HOME/.vimrc
 ln -vs $DDPATH/gvimrc $HOME/.gvimrc
 
 echo "# Installing Vundle"
-git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 
 echo "# Installing Vim plugins using Vundle"
-vim +BundleInstall! +BundleClean +qall
+vim +PluginInstall +qall
 
 echo "# Installing Vim plugins customizations"
 echo "# - MatchTag custom filetypes"
 cp -vi bundle/MatchTag/ftplugin/* $DDPATH/bundle/MatchTag/ftplugin/
-echo "# - Copy existing NERDTree Bookmarks"
-if [ -f $DDPATH.$today/.NERDTreeBookmarks ]; then
-    cp -vi $DDPATH.$today/.NERDTreeBookmarks $DDPATH
-fi

@@ -11,15 +11,24 @@
 "
 "##############################################################"
 
-" Plugins Settings {
+" Plugins {
 
-    " General {
+    " NERDTree
+    Plugin 'scrooloose/nerdtree'
+    let NERDTreeCaseSensitiveSort = 1
+    map <F9> :NERDTreeToggle <CR>
 
-        " NERDTree
-        let NERDTreeCaseSensitiveSort = 1
-        map <F9> :NERDTreeToggle <CR>
+    " GPG Encryption
+    Plugin 'jamessan/vim-gnupg'
 
-    " }
+    " HTML Editing
+    Plugin 'gregsexton/MatchTag'
+
+    " MoinMoin Wiki Syntax
+    Plugin 'moin.vim'
+
+    " Add your Plugins here
+    "
 
 " }
 
