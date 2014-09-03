@@ -27,6 +27,12 @@
     " MoinMoin Wiki Syntax
     Plugin 'moin.vim'
 
+    " snipMate
+    Plugin 'MarcWeber/vim-addon-mw-utils'
+    Plugin 'tomtom/tlib_vim'
+    Plugin 'garbas/vim-snipmate'
+    Plugin 'honza/vim-snippets'
+
     " Add your Plugins here
     "
 
