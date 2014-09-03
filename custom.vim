@@ -15,7 +15,7 @@
 
     " Highlighting unwanted white spaces
     " Show leading whitespace that includes spaces, and trailing whitespace.
-    "autocmd BufWinEnter * match ExtraWhitespace /^\s* \s*\|\s\+$/
+    autocmd BufWinEnter * match ExtraWhitespace /^\s* \s*\|\s\+$/
     highlight ExtraWhitespace ctermbg=red guibg=red
     match ExtraWhitespace /\s\+$/
     autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
