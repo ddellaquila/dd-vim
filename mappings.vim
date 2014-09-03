@@ -40,6 +40,10 @@
     "Map Leader key
     let mapleader = ","
 
+    " Copy and paste
+    map <Leader><C-c> "+y
+    map <Leader><C-v> "+gP
+
     " Select all and copy
     map <Leader>a ggVG"+y
 

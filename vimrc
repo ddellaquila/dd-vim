@@ -18,6 +18,11 @@
 
     " Set DD Vim Configuration path
     let $DDPATH=$HOME."/.dd-vim"
+    " Uncomment the next 4 lines if you use GVim in Windows
+    "if has('gui_running')
+    "    " Set DD Vim Configuration path
+    "    let $DDPATH="H:\.dd-vim"
+    "endif
 
     " Disable backup
     set nobackup
@@ -40,7 +45,14 @@
         filetype off            " Required by Vundle
         "  set the runtime path to include Vundle and initialize
         set rtp+=$DDPATH/bundle/Vundle.vim
+        " Uncomment this if you use GVim in Windows
+        "if has('gui_running')
+        "    set rtp+=H:\.dd-vim\bundle\Vundle.vim
+        "    let path='H:\.dd-vim\bundle'
+        "    call vundle#begin(path)
+        "else
             call vundle#begin()
+        "endif
 
         " Let Vundle manage Vundle, this is required
         Plugin 'gmarik/Vundle.vim'
@@ -152,5 +164,11 @@
     source $DDPATH/custom.vim
 
 " }
+
+" Uncomment this if you use GVim in Windows
+" Vundle fix to load bundles
+"if has('gui_running')
+"   call vundle#config#require(g:bundles)
+"endif
 
 " End of vimrc
