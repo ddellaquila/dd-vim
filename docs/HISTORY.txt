@@ -1,6 +1,20 @@
 Changelog
 =========
 
+3.3 (2014-09-03)
+-------------------
+
+- Update README with latest plugins and changes
+- Add syntax highlighting for MediaWiki articles
+- Add SnipMate plugin
+- Updates for Windows users
+- Update Vundle Setup, use Plugin instead Bundle
+- Fix colors, background, GUI window size/position
+- Rename filetypes configuration file
+- Add Python print() function mapping
+- Show leading whitespace
+- Update Copyright abbreviation
+
 3.2 (2013-12-31)
 ----------------
 
