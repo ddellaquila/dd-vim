@@ -86,9 +86,9 @@
 " Vim UI {
 
     " Color Scheme and Background
+    colorscheme default
     "set background=light
     set background=dark
-    colorscheme default
 
     " Statusline
     set laststatus=2
@@ -108,12 +108,13 @@
 " GVim GUI {
 
     " Set useful settings for GVim in case .gvimrc is missing
+    " Note that gvimrc file is always sourced after the vimrc file.
     if has('gui_running')
 
         " Color Scheme and Background
-        "set background=dark
-        set background=light
         colorscheme default
+        set background=light
+        "set background=dark
 
         " Enable mouse in a windows
         set mouse=a

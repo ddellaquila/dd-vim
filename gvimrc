@@ -7,12 +7,17 @@
 "
 " This is the personal Vim configuration of Danilo Dellaquila.
 "
+" Note that gvimrc file is always sourced after the vimrc file.
+"
 " File: gvimrc
 "
 "##############################################################"
 
-" Background
+" Color Scheme and Background
+colorscheme default
+"colorscheme spiderweblight
 set background=light
+"colorscheme spiderwebdark
 "set background=dark
 
 " Enable mouse in a windows
@@ -32,7 +37,8 @@ set guifont=Courier\ 10\ Pitch
 " Set windows size and position
 set columns=115
 set lines=37
-winpos 0 0
+winpos 150 50
+winsize 135 45
 
 " Turn off toolbar
 set guioptions-=T
