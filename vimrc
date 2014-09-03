@@ -134,7 +134,7 @@
     source $DDPATH/mappings.vim
 
     " File Types
-    source $DDPATH/filetype.vim
+    source $DDPATH/filetypes.vim
 
     " Abbreviations
     source $DDPATH/abbreviations.vim
