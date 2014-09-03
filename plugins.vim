@@ -27,6 +27,9 @@
     " MoinMoin Wiki Syntax
     Plugin 'moin.vim'
 
+    " Syntax highlighting for MediaWiki articles
+    Plugin 'wikipedia.vim'
+
     " snipMate
     Plugin 'MarcWeber/vim-addon-mw-utils'
     Plugin 'tomtom/tlib_vim'
