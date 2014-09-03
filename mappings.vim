@@ -54,8 +54,9 @@
     " Add a reStructuredText link
     map <Leader>l o``_<CR>.. _``: link<ESC>k2b
 
-    " Insert Python Debugger
+    " Python Debugging
     map <Leader>p Oimport pdb; pdb.set_trace()
+    map <Leader>P Oprint("variable=%s" % variable)<Esc>
 
     """ Reformat text
     map <Leader>f gq}
