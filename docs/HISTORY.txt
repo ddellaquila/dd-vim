@@ -1,6 +1,13 @@
 Changelog
 =========
 
+4.0 (2017-04-08)
+----------------
+
+- Refactored and optimized configuration for neovim
+- Replaced Vundle plugins manager with vim-plug
+- Added several new plugins
+
 3.3 (2014-09-03)
 -------------------
 
